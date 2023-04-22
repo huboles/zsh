@@ -1,13 +1,13 @@
-# shell variables
-export SHELL="/bin/zsh"
-export ZSH="$ZDOTDIR"
-export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
-
 # xdg variables
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.local/cache"
+
+# shell variables
+export SHELL="/bin/zsh"
+export ZSH="$ZDOTDIR"
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 # my folders
 export REPOS="$HOME/repos"
