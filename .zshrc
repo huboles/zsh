@@ -6,8 +6,6 @@ ZSHEXTRA=$ZSH/extra
 ZSHINCLUDE=$ZSH/include
 [[ ! -d $ZSH ]] && mkdir $ZSH/{cache,extra,include}
 
-fpath+="$ZSHEXTRA/zfunc"
-
 # source files from include dir
 for file in $ZSHINCLUDE/*; do . ${file}; done
 

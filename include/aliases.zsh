@@ -9,7 +9,7 @@ alias reload='source $ZSH/.zshrc'
 alias quit='disown -a && exit'
 alias :q='exit'
 
-# convinience aliases
+# convenience aliases
 alias v='nvim'
 alias sv='sudoedit'
 alias vsesh='nvim -S'
@@ -21,7 +21,7 @@ alias h='history 0'
 alias j='jobs -l'
 alias c='clear'
 alias ear='clear'
-alias zc='z;clear'
+alias zc='cd;clear'
 alias make='make -j16 -l6 CFLAGS="-march=bdver1"'
 alias dust='dust -rb'
 
@@ -37,10 +37,6 @@ alias ip='ip --color=auto'
 alias grep='grep --color=auto'
 
 # tmux aliases
-alias tmux='tmux'
-alias tlist='tmux list-sessions'
-alias tsesh='tmux new-session -s'
-alias tkill='tmux kill-session -t'
 alias tattach='tmux attach-session -t'
 
 # config aliases
