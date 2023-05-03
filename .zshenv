@@ -19,7 +19,7 @@ export DOWNLOADS="$HOME/downloads"
 export LANG=en_US.UTF-8
 
 # path variables
-export PATH="$PATH:$HOME/.local/bin:$REPOS/script:."
+export PATH="$PATH:$HOME/.cargo/bin:$HOME/.local/bin:$REPOS/script:."
 export CDPATH=".:$HOME:$REPOS:$XDG_CONFIG_HOME:/"
 
 # preferred programs
