@@ -52,7 +52,7 @@ alias tattach='tmux attach-session -t'
 # docker aliases
 alias d='docker'
 alias dr='docker run -d --rm'
-alias dc='docker-compose up -d --remove-orphans'
+alias dc='docker compose up -d --remove-orphans'
 alias ds='docker stop'
 alias drm='docker rm'
 alias drs='docker restart'
