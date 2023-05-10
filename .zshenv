@@ -32,7 +32,7 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
 # terminal setting:
-[[ -n $TMUX ]] && export TERM=tmux-256color || export TERM=st-256color
+# [[ -n $TMUX ]] && export TERM=tmux-256color || export TERM=alacritty
 
 # preferred programs
 export PAGER='less'
