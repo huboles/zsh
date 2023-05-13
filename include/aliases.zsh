@@ -12,6 +12,8 @@ alias :q='exit'
 # convenience aliases
 alias v='nvim'
 alias sv='sudoedit'
+alias s="s!!"
+alias sudo="sudo "
 alias vsesh='nvim -S'
 alias vdiff='nvim -d'
 alias ..='cd ..'
