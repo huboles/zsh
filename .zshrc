@@ -7,7 +7,7 @@ ZSHINCLUDE=$ZSH/include
 [[ ! -d $ZSH ]] && mkdir $ZSH/{cache,extra,include}
 
 # source files from include dir
-for file in $ZSHINCLUDE/*.zsh; do
+for file in $ZSHINCLUDE/*; do
     . ${file}
 done
 
