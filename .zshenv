@@ -10,7 +10,7 @@ export XDG_CACHE_HOME="$HOME/.local/cache"
 # shell variables
 export SHELL="/bin/zsh"
 export ZDOTDIR="$HOME/.config/zsh"
-export ZSH="$XDG_CONFIG_HOME/zsh"
+export ZSH="$ZDOTDIR"
 export ZSH_CUSTOM="$ZSH/custom"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
@@ -26,12 +26,11 @@ export LANG=en_US.UTF-8
 
 # path variables
 export PATH="$PATH:$HOME/.local/bin:."
-export PATH="$PATH:$REPOS/script:$REPOS/ruby:"
+export PATH="$PATH:$REPOS/script:$REPOS/ruby"
 export CDPATH=".:$HOME:$HOME/$REPOS:$HOME/$XDG_CONFIG_HOME:/"
 
 # language variables
 export GOPATH="$XDG_DATA_HOME/go"
-export PERL5LIB="$XDG_DATA_HOME/perl5::$PERL5LIB"
 export PERL_LOCAL_LIB_ROOT="$XDG_DATA_HOME/perl5"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
@@ -39,16 +38,14 @@ export PATH="$PATH:$XDG_DATA_HOME/cargo/bin"
 export PATH="$PATH:$XDG_DATA_HOME/gem/ruby/3.0.0/bin"
 
 # preferred programs
-export PAGER='less'
-export MANPAGER='less'
-export EDITOR="nvim"
-export DIFFPROG="nvim -d"
-export VISUAL="nvim"
-export BROWSER="firefox"
+export PAGER='/usr/bin/less'
+export LESS='-R --use-color -Dd+r$Du+b'
+export MANPAGER='/usr/bin/less -R --use-color -Dd+r -Du+b'
+export EDITOR="/usr/bin/nvim"
+export DIFFPROG="/usr/bin/nvim -d"
+export VISUAL="/usr/bin/nvim"
+export BROWSER="/usr/bin/firefox"
 export EMAIL='huck@huck.website'
-
-# vim config
-export MYVIMRC="$XDG_CONFIG_HOME/nvim/init.lua"
 
 # config paths
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"

@@ -3,20 +3,14 @@
 . $ZSH/.zshenv
 ZSHEXTRA=$ZSH/extra
 ZSHINCLUDE=$ZSH/include
-[[ ! -d $ZSH ]] && mkdir $ZSH/{,cache,extra,include,include}
-
-fpath+="$ZSHEXTRA/zfunc"
+[[ ! -d $ZSH ]] && mkdir $ZSH/{,cache,extra,include}
 
 # source files from include dir
-for file in $ZSHINCLUDE/*; do
-    . ${file}
-done
+for file in $ZSHINCLUDE/*; do . ${file}; done
 
-
-# start programs 
-[[ -z $(pgrep tmux) ]] && tmux start &
+# start programs
 [[ -f $XDG_CONFIG_HOME/.dircolors ]] && eval $(dircolors -b $XDG_CONFIG_HOME/.dircolors)
-eval "$(zoxide init zsh --cmd z)"
+[[ $(which zoxide) ]] && eval "$(zoxide init zsh --cmd z)"
 
 # options ------------------------------------------------------------
 ENABLE_CORRECTION="true"
@@ -77,7 +71,7 @@ autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 
 add-zsh-hook chpwd chpwd_recent_dirs
 
-chpwd() { l }
+chpwd() { ls -Ah }
 
 autoload -Uz run-help
 
@@ -91,8 +85,8 @@ bindkey "\e[2~" quoted-insert
 
 # custom prompt -----------------------------------------------------
 if [[ -n $SSH_CONNECTION ]]; then
-PROMPT='%(?..%B%F{red}x) 
-%B%F{yellow}%n%b%f@%B%F{blue}%M%b%f -> %F{green}%d %F{red}[SSH] %B%F{magenta}[gentoo]%b%f $(git_prompt_enhanced_status) 
+PROMPT='%(?..%B%F{red}x)
+%B%F{yellow}%n%b%f@%B%F{blue}%M%b%f -> %F{green}%d %F{red}[SSH] %B%F{magenta}[gentoo]%b%f $(git_prompt_enhanced_status)
 %B%F{green}%(!.#.$) %f%b> '
 RPROMPT='[%!]'
 else
@@ -104,4 +98,3 @@ fi
 
 PS2='%B%F{green}%(!.#.$)%f%b >  %F{cyan}*%f '
 PS3='%B%F{green}%(!.#.$)%f%b %B%F{magenta}? '
-

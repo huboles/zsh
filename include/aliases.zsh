@@ -7,7 +7,6 @@ alias mount='mount --mkdir'
 alias lsblk='lsblk -f'
 alias reload='source $ZSH/.zshrc'
 alias quit='disown -a && exit'
-alias msg='sudo dmesg -H --level=err'
 alias :q='exit'
 
 # vim aliases
