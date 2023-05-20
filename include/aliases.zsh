@@ -1,5 +1,3 @@
-#ALIASES:
-
 #shell aliases
 alias cp='cp -vr'
 alias rm='rm -v'
@@ -12,18 +10,22 @@ alias quit='disown -a && exit'
 alias msg='sudo dmesg -H --level=err'
 alias :q='exit'
 
-# convinience aliases
+# vim aliases
 alias v='nvim'
-alias sv='sudoedit'
 alias vsesh='nvim -S'
 alias vdiff='nvim -d'
+
+# sudo aliases
+alias sv='sudoedit'
+alias sudo='sudo '
+
+# convinience aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias h='history 0'
 alias j='jobs -l'
 alias c='clear'
-alias ear='clear'
 alias zc='cd; clear'
 alias dust='dust -rb'
 alias xz='xz -v -T0 -9 -M64G'
@@ -44,9 +46,6 @@ alias egrep='egrep --color=auto'
 
 # tmux aliases
 alias tmux='tmux'
-alias tlist='tmux list-sessions'
-alias tsesh='tmux new-session -s'
-alias tkill='tmux kill-session -t'
 alias tattach='tmux attach-session -t'
 
 # docker aliases
