@@ -6,4 +6,4 @@
 !.zshenv
 !.zprofile
 !include/
-
+!completions/

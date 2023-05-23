@@ -7,7 +7,9 @@ export XDG_CACHE_HOME="$HOME/.local/cache"
 # shell variables
 export SHELL="/bin/zsh"
 export ZSH="$ZDOTDIR"
-export ZSH_CUSTOM="$ZSH/custom"
+export ZSHEXTRA="$ZDOTDIR/extra"
+export ZSHINCLUDE="$ZDOTDIR/include"
+export ZSHCOMPLETION="$ZSH/completions"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 # my folders

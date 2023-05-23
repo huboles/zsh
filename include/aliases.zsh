@@ -1,33 +1,35 @@
-#shell aliases
 alias cp='cp -vr'
 alias rm='rm -v'
 alias mv='mv -v'
 alias mkdir='mkdir -pv'
 alias mount='mount --mkdir'
 alias lsblk='lsblk -f'
+
 alias reload='source $ZSH/.zshrc'
 alias quit='disown -a && exit'
 alias :q='exit'
 
-# convenience aliases
 alias v='nvim'
-alias sv='sudoedit'
-alias s="s!!"
-alias sudo="sudo "
 alias vsesh='nvim -S'
 alias vdiff='nvim -d'
+
+alias sv='sudoedit'
+alias sudo="sudo "
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
 alias h='history 0'
 alias j='jobs -l'
 alias c='clear'
-alias ear='clear'
 alias zc='cd;clear'
+
+alias cd='z '
+
 alias make='make -j16 -l6 CFLAGS="-march=bdver1"'
 alias dust='dust -rb'
 
-# ls/exa aliases
 alias ls='lsd'
 alias l='ls'
 alias ll='ls -lAh'
