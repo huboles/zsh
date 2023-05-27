@@ -7,6 +7,9 @@ export XDG_CACHE_HOME="$HOME/.local/cache"
 # shell variables
 export SHELL="/bin/zsh"
 export ZSH="$ZDOTDIR"
+export ZSHEXTRA="$ZDOTDIR/extra"
+export ZSHINCLUDE="$ZDOTDIR/include"
+export ZSHCOMPLETION="$ZSH/completions"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 # my folders
@@ -14,19 +17,33 @@ export REPOS="$HOME/repos"
 export DOTFILES="$REPOS/dotfiles"
 export SCRIPTS="$REPOS/script"
 export DOWNLOADS="$HOME/downloads"
+export PACKAGES="$HOME/.packages"
+export CONFIG="$XDG_CONFIG_HOME"
 
 # system variables
 export LANG=en_US.UTF-8
 
 # path variables
-export PATH="$PATH:$HOME/.cargo/bin:$HOME/.local/bin:$REPOS/script:."
-export CDPATH=".:$HOME:$REPOS:$XDG_CONFIG_HOME:/"
+export PATH="$PATH:$HOME/.local/bin:$REPOS/script:$REPOS/ruby:$XDG_DATA_HOME/cargo/bin:."
+export CDPATH=".:$HOME:$HOME/$REPOS:$HOME/$XDG_CONFIG_HOME:/"
+
+# language variables
+export GOPATH="$XDG_DATA_HOME/go"
+export PERL_LOCAL_LIB_ROOT="$XDG_DATA_HOME/perl5"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+
+# terminal setting:
+# [[ -n $TMUX ]] && export TERM=tmux-256color || export TERM=alacritty
 
 # preferred programs
 export PAGER='less'
-export LESS='-R --use-color'
-export MANPAGER='less -R --use-color'
+export LESS='-R --use-color -Dd+r$Du+b'
+export MANPAGER='less -R --use-color -Dd+r -Du+b'
 export EDITOR="/usr/bin/nvim"
+export DIFFPROG="/usr/bin/nvim -d"
+export VISUAL="/usr/bin/nvim"
+export BROWSER="/usr/bin/firefox"
 export EMAIL='huck@huck.website'
 
 # config paths
@@ -35,3 +52,7 @@ export TERMINFO="$XDG_DATA_HOME/terminfo"
 export TERMINFO_DIRS="$XDG_DATA_HOME/terminfo:/usr/share/terminfo"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
+
+# zoxide
+export _ZO_ECHO='1'
+export _ZO_RESOLVE_SYMLINKS='1'

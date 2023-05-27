@@ -76,9 +76,9 @@
 #
 # For example:
 #   ZVM_VI_HIGHLIGHT_FOREGROUND=green           # Color name
-#   ZVM_VI_HIGHLIGHT_FOREGROUND=#008800         # Hex value
+ZVM_VI_HIGHLIGHT_FOREGROUND=#b8d68c
 #   ZVM_VI_HIGHLIGHT_BACKGROUND=red             # Color name
-#   ZVM_VI_HIGHLIGHT_BACKGROUND=#ff0000         # Hex value
+ZVM_VI_HIGHLIGHT_BACKGROUND=#e84f4f
 #   ZVM_VI_HIGHLIGHT_EXTRASTYLE=bold,underline  # bold and underline
 #
 # ZVM_VI_SURROUND_BINDKEY
@@ -137,7 +137,7 @@
 #   ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
 #   ZVM_LINE_INIT_MODE=$ZVM_MODE_NORMAL
 #
-# ZVM_LAZY_KEYBINDINGS:
+ZVM_LAZY_KEYBINDINGS=false
 # the setting for lazy keybindings (default is true), and lazy keybindings
 # will postpone the keybindings of vicmd and visual keymaps to the first
 # time entering normal mode
@@ -3291,7 +3291,7 @@ function zvm_init() {
   zvm_bindkey vicmd '^[[3~' delete-char
 
   # History search
-  # zvm_bindkey viins '^R' history-incremental-search-backward
+  #zvm_bindkey viins '^R' history-incremental-search-backward
   zvm_bindkey viins '^S' history-incremental-search-forward
   zvm_bindkey viins '^P' up-line-or-history
   zvm_bindkey viins '^N' down-line-or-history
@@ -3456,4 +3456,3 @@ case $ZVM_INIT_MODE in
   sourcing) zvm_init;;
   *) precmd_functions+=(zvm_init);;
 esac
-

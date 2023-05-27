@@ -1,7 +1,9 @@
 *
-!*.zsh
 !.gitignore
+!*.zsh
+!*.sh
 !.zshrc
 !.zshenv
 !.zprofile
 !include/
+!completions/
