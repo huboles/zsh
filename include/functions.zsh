@@ -5,12 +5,6 @@ f() {
     find . | grep "$1";
 }
 
-# wrapper around cd for easier navigation + always show files in dir
-# cd() {
-#     z $1
-#     la
-# }
-
 # smart remove
 rem() {
     if [ ! -d "$HOME/.trash" ]; then mkdir "$HOME/.trash"; fi
