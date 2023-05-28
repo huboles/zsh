@@ -5,6 +5,12 @@ f() {
     find . | grep "$1";
 }
 
+# wrapper around cd for easier navigation + always show files in dir
+# cd() {
+#     z $1
+#     la
+# }
+
 # smart remove
 rem() {
     if [ ! -d "$HOME/.trash" ]; then mkdir "$HOME/.trash"; fi
@@ -20,9 +26,4 @@ rem() {
             echo -e "\n\033[31;1;4mFile Not Found:\033[0m\033[34;1m $1\033[0m\n"
         fi
     done
-}
-
-# git add and commit one file
-git_ac() {
-    git add "$1" && git commit -m "$2"
 }
