@@ -1,6 +1,3 @@
-# terminfo
-[[ $TERM = "tmux-256color" ]] && export TERM=screen-256color
-
 # xdg variables
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -9,9 +6,11 @@ export XDG_CACHE_HOME="$HOME/.local/cache"
 
 # shell variables
 export SHELL="/bin/zsh"
-export ZDOTDIR="$HOME/.config/zsh"
 export ZSH="$ZDOTDIR"
-export ZSH_CUSTOM="$ZSH/custom"
+export ZSHEXTRA="$ZDOTDIR/extra"
+export ZSHINCLUDE="$ZDOTDIR/include"
+export ZSHCOMPLETION="$ZSH/completions"
+export ZSHHISTORY="$ZSH/history"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 # my folders
@@ -20,13 +19,13 @@ export DOTFILES="$REPOS/dotfiles"
 export SCRIPTS="$REPOS/script"
 export DOWNLOADS="$HOME/downloads"
 export PACKAGES="$HOME/.packages"
+export CONFIG="$XDG_CONFIG_HOME"
 
 # system variables
 export LANG=en_US.UTF-8
 
 # path variables
-export PATH="$PATH:$HOME/.local/bin:."
-export PATH="$PATH:$REPOS/script:$REPOS/ruby"
+export PATH="$PATH:$HOME/.local/bin:$REPOS/script:$REPOS/ruby:."
 export CDPATH=".:$HOME:$HOME/$REPOS:$HOME/$XDG_CONFIG_HOME:/"
 
 # language variables
@@ -48,9 +47,12 @@ export BROWSER="/usr/bin/firefox"
 export EMAIL='huck@huck.website'
 
 # config paths
+export GTK_2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"
 export TERMINFO="$XDG_DATA_HOME/terminfo"
+export TERMINFO_DIRS="$XDG_DATA_HOME/terminfo:/usr/share/terminfo"
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 
 # zoxide
 export _ZO_ECHO='1'

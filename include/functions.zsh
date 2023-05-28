@@ -1,12 +1,9 @@
 #!/bin/bash
 
-# grep through history
-hg() { history 0 | grep "$1"; }
-
 # easy find files
-f() { find . | grep "$1"; }
-
-cd() { z $1; ls }
+f() {
+    find . | grep "$1";
+}
 
 # smart remove
 rem() {
