@@ -2,7 +2,7 @@
 
 # setup ~/.config/zsh
 . $ZDOTDIR/.zshenv
-[[ ! -d $ZSH ]] && mkdir -p $ZSH/cache $ZSHINCLUDE $ZSHCOMPLETION $ZSHEXTRA
+[[ ! -d $ZSH ]] && mkdir -p $ZSH/cache $ZSHINCLUDE $ZSHCOMPLETION $ZSHEXTRA $ZSHHISTORY
 
 # options
 ENABLE_CORRECTION="true"

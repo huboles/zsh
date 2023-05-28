@@ -10,6 +10,7 @@ export ZSH="$ZDOTDIR"
 export ZSHEXTRA="$ZDOTDIR/extra"
 export ZSHINCLUDE="$ZDOTDIR/include"
 export ZSHCOMPLETION="$ZSH/completions"
+export ZSHHISTORY="$ZSH/history"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 # my folders
