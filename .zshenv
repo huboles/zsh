@@ -10,6 +10,7 @@ export ZSH="$ZDOTDIR"
 export ZSHEXTRA="$ZDOTDIR/extra"
 export ZSHINCLUDE="$ZDOTDIR/include"
 export ZSHCOMPLETION="$ZSH/completions"
+export ZSHHISTORY="$ZSH/history"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 # my folders
@@ -24,7 +25,7 @@ export CONFIG="$XDG_CONFIG_HOME"
 export LANG=en_US.UTF-8
 
 # path variables
-export PATH="$PATH:$HOME/.local/bin:$REPOS/script:$REPOS/ruby:$XDG_DATA_HOME/cargo/bin:."
+export PATH="$PATH:$HOME/.local/bin:$REPOS/script:$REPOS/ruby:."
 export CDPATH=".:$HOME:$HOME/$REPOS:$HOME/$XDG_CONFIG_HOME:/"
 
 # language variables
@@ -32,14 +33,13 @@ export GOPATH="$XDG_DATA_HOME/go"
 export PERL_LOCAL_LIB_ROOT="$XDG_DATA_HOME/perl5"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
-
-# terminal setting:
-# [[ -n $TMUX ]] && export TERM=tmux-256color || export TERM=alacritty
+export PATH="$PATH:$XDG_DATA_HOME/cargo/bin"
+export PATH="$PATH:$XDG_DATA_HOME/gem/ruby/3.0.0/bin"
 
 # preferred programs
-export PAGER='less'
+export PAGER='/usr/bin/less'
 export LESS='-R --use-color -Dd+r$Du+b'
-export MANPAGER='less -R --use-color -Dd+r -Du+b'
+export MANPAGER='/usr/bin/less -R --use-color -Dd+r -Du+b'
 export EDITOR="/usr/bin/nvim"
 export DIFFPROG="/usr/bin/nvim -d"
 export VISUAL="/usr/bin/nvim"

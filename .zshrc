@@ -2,7 +2,7 @@
 
 # setup ~/.config/zsh
 . $ZDOTDIR/.zshenv
-[[ ! -d $ZSH ]] && mkdir -p $ZSH/cache $ZSHINCLUDE $ZSHCOMPLETION $ZSHEXTRA
+[[ ! -d $ZSH ]] && mkdir -p $ZSH/cache $ZSHINCLUDE $ZSHCOMPLETION $ZSHEXTRA $ZSHHISTORY
 
 # options
 ENABLE_CORRECTION="true"
@@ -58,7 +58,7 @@ bindkey "\e[2~" quoted-insert
 # custom prompt
 if [[ -n $SSH_CONNECTION ]]; then
 PROMPT='%(?..%B%F{red}x)
-%B%F{yellow}%n%b%f@%B%F{blue}%m%b%f: %F{cyan}%~ %F{red}[SSH] $F{magenta}[gentoo] %f$(git_prompt_enhanced_status)
+%B%F{yellow}%n%b%f@%B%F{red}%m%b%f: %F{blue}%~ %F{red}[SSH] %F{magenta}[gentoo] %f$(git_prompt_enhanced_status)
 %B%F{green}%(!.#.$) %f%b> '
 RPROMPT='%f[%!]'
 else
