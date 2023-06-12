@@ -25,8 +25,6 @@ alias j='jobs -l'
 alias c='clear'
 alias zc='cd;clear'
 
-alias cd='z '
-
 alias dust='dust -rb'
 alias xz='xz -v -T0 -9 -M64G'
 alias make='make CFLAGS="-march=sandybridge -O2 -pipe" -j48 -l30'
