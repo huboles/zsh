@@ -39,6 +39,7 @@ alias lt='ls --tree'
 # color aliases
 alias ip='ip --color=auto'
 alias grep='grep --color=auto'
+alias diff='diff --color'
 
 # tmux aliases
 alias tattach='tmux attach-session -t'
