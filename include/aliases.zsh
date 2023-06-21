@@ -23,6 +23,8 @@ alias ....='cd ../../..'
 alias h='history 0'
 alias j='jobs -l'
 alias c='clear'
+
+alias cd='z'
 alias zc='cd;clear'
 
 alias dust='dust -rb'

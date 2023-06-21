@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# cd + ls wrapper
-
-cd() {
-    z $1
-    ls
-}
-
 # easy find files
 f() {
     find . | grep "$1";
