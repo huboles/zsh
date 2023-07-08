@@ -31,10 +31,10 @@ export CDPATH=".:$HOME:$HOME/$REPOS:$HOME/$XDG_CONFIG_HOME:/"
 # language variables
 export GOPATH="$XDG_DATA_HOME/go"
 export PERL_LOCAL_LIB_ROOT="$XDG_DATA_HOME/perl5"
+export PATH="$XDG_DATA_HOME/gem/ruby/3.0.0/bin:$PATH"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
-export PATH="$PATH:$XDG_DATA_HOME/cargo/bin"
-export PATH="$PATH:$XDG_DATA_HOME/gem/ruby/3.0.0/bin"
+export PATH="$XDG_DATA_HOME/cargo/bin:$PATH"
 
 # compiler variables
 export LLVM_PREFIX="/usr/lib/llvm/16/bin"
