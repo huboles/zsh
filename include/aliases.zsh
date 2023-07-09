@@ -16,6 +16,7 @@ alias vdiff='nvim -d'
 alias sv='sudoedit'
 alias sudo="sudo "
 
+alias .-='cd -'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
