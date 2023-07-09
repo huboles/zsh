@@ -28,7 +28,7 @@ zstyle ':completion:*' original true
 zstyle ':completion:*' verbose true
 
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'r:|[._-,]=** r:|=**' 'l:|=* r:|=*'
+zstyle ':completion:*' matcher-list '' 'm:{a-z\-}={A-Z\_}' 'r:|?=** m:{a-z\-}={A-Z\_}'
 
 zstyle ':completion:*' gain-privileges true
 
