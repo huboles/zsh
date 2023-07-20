@@ -16,6 +16,7 @@ alias vdiff='nvim -d'
 alias sv='sudoedit'
 alias sudo="sudo "
 
+alias .-='cd -'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -24,8 +25,8 @@ alias h='history 0'
 alias j='jobs -l'
 alias c='clear'
 alias zc='cd;clear'
-
 alias cd='z '
+alias rename='perl-rename'
 
 alias make='make -j16 -l6 CFLAGS="-march=bdver1"'
 alias dust='dust -rb'
