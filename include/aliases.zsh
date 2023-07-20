@@ -16,6 +16,7 @@ alias vdiff='nvim -d'
 alias sv='sudoedit'
 alias sudo="sudo "
 
+alias .-='cd -'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -25,6 +26,7 @@ alias j='jobs -l'
 alias c='clear'
 alias zc='cd;clear'
 alias cd='z '
+alias rename='perl-rename'
 
 alias make='make -j8 -l4 CFLAGS="-march=skylake -O2 -pipe -fomit-frame-pointer"'
 alias dust='dust -rb'
@@ -38,6 +40,7 @@ alias lt='ls --tree'
 # color aliases
 alias ip='ip --color=auto'
 alias grep='grep --color=auto'
+alias diff='diff --color'
 
 # tmux aliases
 alias tattach='tmux attach-session -t'
