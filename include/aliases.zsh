@@ -47,6 +47,6 @@ alias tattach='tmux attach-session -t'
 
 # config aliases
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
-alias xrdb='xrdb -load "XDG_CONFIG_HOME/X11/xresources"'
-alias background='feh --bg-fill --no-fehbg --randomize /home/huck/media/photos/backgrounds'
+alias xrdb='xrdb -load "$XDG_CONFIG_HOME/X11/xresources"'
+alias background='feh --bg-fill --no-fehbg --randomize /home/huck/drive/library/photos/background'
 alias nvidia-settings='nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings'
