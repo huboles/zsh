@@ -24,9 +24,9 @@ alias ....='cd ../../..'
 alias h='history 0'
 alias j='jobs -l'
 alias c='clear'
-
-alias cd='z'
 alias zc='cd;clear'
+alias cd='z '
+alias rename='perl-rename'
 
 alias dust='dust -rb'
 alias xz='xz -v -T0 -9 -M64G'

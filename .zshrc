@@ -25,7 +25,7 @@ setopt append_create clobber_empty
 setopt hash_cmds hash_dirs
 setopt path_script prompt_subst
 setopt auto_param_keys auto_param_slash auto_remove_slash
-setopt null_glob glob glob_dots glob_star_short bang_hist
+setopt null_glob glob glob_dots glob_star_short bang_hist extendedglob
 unsetopt flow_control
 
 # completion
