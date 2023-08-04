@@ -35,6 +35,7 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export PATH="$PATH:$XDG_DATA_HOME/cargo/bin"
 export PATH="$PATH:$XDG_DATA_HOME/gem/ruby/3.0.0/bin"
+export PATH="$PATH:$XDG_DATA_HOME/julia/bin"
 
 # preferred programs
 export PAGER='/usr/bin/less'
