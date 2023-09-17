@@ -35,6 +35,7 @@ export PATH="$XDG_DATA_HOME/gem/ruby/3.0.0/bin:$PATH"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export PATH="$XDG_DATA_HOME/cargo/bin:$PATH"
+export PATH="$PATH:$XDG_DATA_HOME/julia/bin/"
 
 # compiler variables
 export LLVM_PREFIX="/usr/lib/llvm/16/bin"
