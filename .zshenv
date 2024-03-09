@@ -25,7 +25,7 @@ export CONFIG="$XDG_CONFIG_HOME"
 export LANG=en_US.UTF-8
 
 # path variables
-export PATH="$PATH:$HOME/.local/bin:$REPOS/script:$REPOS/ruby:."
+export PATH="$HOME/.local/bin:$PATH:$REPOS/script:$REPOS/ruby:."
 export CDPATH=".:$HOME:$HOME/$REPOS:$HOME/$XDG_CONFIG_HOME:/"
 
 # language variables
@@ -38,7 +38,7 @@ export PATH="$XDG_DATA_HOME/cargo/bin:$PATH"
 export PATH="$PATH:$XDG_DATA_HOME/julia/bin/"
 
 # compiler variables
-export LLVM_PREFIX="/usr/lib/llvm/16/bin"
+export LLVM_PREFIX="/usr/lib/llvm/17/bin"
 export CC="$LLVM_PREFIX/clang"
 export CXX="$LLVM_PREFIX/clang++"
 export AR="$LLVM_PREFIX/llvm-ar"
